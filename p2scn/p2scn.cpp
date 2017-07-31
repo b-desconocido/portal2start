@@ -85,7 +85,7 @@ static bool startAndFixPortal(const wstring &portalPath, const wstring &dllPath,
 
 int wmain(int argc, wchar_t *argv[])
 {
-	ExeDirectory = path(argv[0]).remove_filename().generic_wstring();
+	ExeDirectory = path(argv[0]).remove_filename();
 	wstring portalPath, dllPath;
 	if (getPortalExePath(portalPath))
 	{		
